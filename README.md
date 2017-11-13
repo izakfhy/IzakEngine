@@ -1,2 +1,2 @@
 # IzakEngine
-My hobby game engine project
+My opengl project for learning
