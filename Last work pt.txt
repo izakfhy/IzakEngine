@@ -1,0 +1,23 @@
+---------------- 22/7/2017 9.29pm ------------------------------------
+- automated serialization & deserialization ( sort of completed. at least can read and write)
+- todo next time:
+  - wrap text serialization into a class (unsure)
+  - introspection of objects with inheritance.(done)
+    - automate serialize parent class attributes.(done)
+  - refactor serialization and deserialization code.
+  
+  
+----------------- 23/7/2017 9.30pm -----------------------------------
+- read in level file with mulltiple archetypes\
+- todo next time:
+  - refactor serialization and deserialization code.
+  - pointlight component ??? not sure if that should be a component. (done)
+  
+ ---------------- 24/7/2017 8.52pm ------------------------------------
+- use uniform buffer obecjs to send in point lights data(optimization)
+- pointlight component and pointlight object serialization/deserialization.
+- todo next time:
+  - mouse object picking.
+  - add gimbal axes.( done)
+  - translate, scale and rotate?
+  -

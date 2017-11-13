@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2A983B6E-590D-4820-B100-EAA128980445}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OpenGLTutorial</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>./GLFW;./GL;$(IncludePath)</IncludePath>
+    <LibraryPath>./lib/;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\Izak\Documents\Visual Studio 2013\Projects\OpenGLTutorial\OpenGLTutorial\assimp;$(IncludePath)</IncludePath>
+    <LibraryPath>./lib;C:\Users\Izak\Documents\Visual Studio 2013\Projects\OpenGLTutorial\OpenGLTutorial\lib;$(SolutionDir)/externals/assimp-3.1.1/include/Compiler;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalOptions>/NODEFAULTLIB:LIBCMT %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glfw3d.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>./lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>./assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>assimp.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>./lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BBEMath.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="ComponentGM.cpp" />
+    <ClCompile Include="ComponentManager.cpp" />
+    <ClCompile Include="Factory.cpp" />
+    <ClCompile Include="FrameBuffers.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Gizmo.cpp" />
+    <ClCompile Include="GraphicsEngine.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="IZEngine.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="MetaData.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="Picker.cpp" />
+    <ClCompile Include="PointLightComponent.cpp" />
+    <ClCompile Include="refvar.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="TextSerialize.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="tinystr.cpp" />
+    <ClCompile Include="tinyxml.cpp" />
+    <ClCompile Include="tinyxml2.cpp" />
+    <ClCompile Include="tinyxmlerror.cpp" />
+    <ClCompile Include="tinyxmlparser.cpp" />
+    <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="var.cpp" />
+    <ClCompile Include="varbase.cpp" />
+    <ClCompile Include="XMLSerializer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="final.frag" />
+    <None Include="final.vert" />
+    <None Include="Forward.frag" />
+    <None Include="Forward.vert" />
+    <None Include="lamp.frag" />
+    <None Include="lamp.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AllComponents.h" />
+    <ClInclude Include="BBEMath.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="ComponentGM.h" />
+    <ClInclude Include="ComponentManager.h" />
+    <ClInclude Include="ComponentNames.h" />
+    <ClInclude Include="ComponentRegistry.h" />
+    <ClInclude Include="Factory.h" />
+    <ClInclude Include="FrameBuffers.h" />
+    <ClInclude Include="FreeImage.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Gizmo.h" />
+    <ClInclude Include="Globals.h" />
+    <ClInclude Include="GraphicsEngine.h" />
+    <ClInclude Include="image_io.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="IZEngine.h" />
+    <ClInclude Include="Key.h" />
+    <ClInclude Include="Lights.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="MetaData.h" />
+    <ClInclude Include="MetaManager.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="Picker.h" />
+    <ClInclude Include="PointLightComponent.h" />
+    <ClInclude Include="RefelectionUtils.h" />
+    <ClInclude Include="refvar.h" />
+    <ClInclude Include="RemQual.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="SystemComponentBase.h" />
+    <ClInclude Include="SystemComponentHeaders.h" />
+    <ClInclude Include="SystemComponentNames.h" />
+    <ClInclude Include="TextSerialize.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="tinystr.h" />
+    <ClInclude Include="tinyxml.h" />
+    <ClInclude Include="tinyxml2.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="var.h" />
+    <ClInclude Include="varbase.h" />
+    <ClInclude Include="XMLSerializer.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

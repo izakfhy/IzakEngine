@@ -1,0 +1,336 @@
+NanoSuit
+{
+  GameObject
+  {
+    m_name     player
+    m_id     1
+    m_active     1
+    m_isArchtype     0
+    m_archtypename     NanoSuit
+  }
+  ModelComponent
+  {
+    m_path     C:\Users\Izak\Documents\Visual Studio 2013\Projects\OpenGLTutorial\OpenGLTutorial\Resource\Models\Nanosuit\nanosuit.obj
+    m_texture
+    m_active     1
+    m_name     ModelComponent
+    m_uniquename     ModelComponent1
+  }
+  Transform
+  {
+    m_active     1
+    m_name     Transform
+    m_uniquename     Transform1
+    m_Scale     Vector3
+    {
+      x       0.2
+      y       0.2
+      z       0.2
+    }
+    m_Pos     Vector3
+    {
+      x       -1
+      y       0
+      z       0
+    }
+    m_Rotate     Vector3
+    {
+      x       0
+      y       0
+      z       0
+    }
+  }
+}
+NanoSuit
+{
+  GameObject
+  {
+    m_name     player2
+    m_id     2
+    m_active     1
+    m_isArchtype     0
+    m_archtypename     NanoSuit
+  }
+  ModelComponent
+  {
+    m_path     C:\Users\Izak\Documents\Visual Studio 2013\Projects\OpenGLTutorial\OpenGLTutorial\Resource\Models\Nanosuit\nanosuit.obj
+    m_texture
+    m_active     1
+    m_name     ModelComponent
+    m_uniquename     ModelComponent2
+  }
+  Transform
+  {
+    m_active     1
+    m_name     Transform
+    m_uniquename     Transform2
+    m_Scale     Vector3
+    {
+      x       0.2
+      y       0.2
+      z       0.2
+    }
+    m_Pos     Vector3
+    {
+      x       2
+      y       0
+      z       0
+    }
+    m_Rotate     Vector3
+    {
+      x       0
+      y       0
+      z       0
+    }
+  }
+}
+NanoSuit
+{
+  GameObject
+  {
+    m_name     player4
+    m_id     3
+    m_active     1
+    m_isArchtype     0
+    m_archtypename     NanoSuit
+  }
+  ModelComponent
+  {
+    m_path     C:\Users\Izak\Documents\Visual Studio 2013\Projects\OpenGLTutorial\OpenGLTutorial\Resource\Models\Nanosuit\nanosuit.obj
+    m_texture
+    m_active     1
+    m_name     ModelComponent
+    m_uniquename     ModelComponent4
+  }
+  Transform
+  {
+    m_active     1
+    m_name     Transform
+    m_uniquename     Transform24
+    m_Scale     Vector3
+    {
+      x       0.2
+      y       0.2
+      z       0.2
+    }
+    m_Pos     Vector3
+    {
+      x       4
+      y       0
+      z       0
+    }
+    m_Rotate     Vector3
+    {
+      x       0
+      y       0
+      z       0
+    }
+  }
+}
+PointLight
+{
+  GameObject
+  {
+    m_name   light1
+    m_id     4
+    m_active     1
+    m_isArchtype     0
+    m_archtypename     PointLight
+  }
+  ModelComponent
+  {
+    m_path     C:\Users\Izak\Documents\Visual Studio 2013\Projects\OpenGLTutorial\OpenGLTutorial\Resource\Models\cube\cube.obj
+    m_texture  C:\Users\Izak\Documents\Visual Studio 2013\Projects\OpenGLTutorial\OpenGLTutorial\Resource\Textures\PointLight.png
+    m_active     1
+    m_name     ModelComponent
+    m_uniquename
+  }
+  Transform
+  {
+    m_Scale     Vector3
+    {
+      x       0.2
+      y       0.2
+      z       0.2
+    }
+    m_Pos     Vector3
+    {
+      x       2
+      y       2
+      z       2
+    }
+    m_Rotate     Vector3
+    {
+      x       0
+      y       0
+      z       0
+    }
+  }
+  PointLightComponent
+  {
+    m_active   1
+    m_name   PointLightComponent
+    m_uniquename   PointLightComponent
+
+    m_ambient   Vector3
+    {
+      x     0.2
+      y     0.2
+      z     0.2
+    }
+    m_diffuse   Vector3
+    {
+      x     5.5
+      y     5.5
+      z     5.5
+    }
+    m_specular   Vector3
+    {
+      x     50
+      y     50
+      z     50
+    }
+    m_color   1
+    m_constant   0
+    m_linear   0.09
+    m_quadratic   0.032
+  }
+}
+PointLight
+{
+  GameObject
+  {
+    m_name   light2
+    m_id     5
+    m_active     1
+    m_isArchtype     0
+    m_archtypename     PointLight
+  }
+  ModelComponent
+  {
+    m_path     C:\Users\Izak\Documents\Visual Studio 2013\Projects\OpenGLTutorial\OpenGLTutorial\Resource\Models\cube\cube.obj
+    m_texture  C:\Users\Izak\Documents\Visual Studio 2013\Projects\OpenGLTutorial\OpenGLTutorial\Resource\Textures\PointLight.png
+    m_active     1
+    m_name     ModelComponent
+    m_uniquename
+  }
+  Transform
+  {
+    m_Scale     Vector3
+    {
+      x       0.2
+      y       0.2
+      z       0.2
+    }
+    m_Pos     Vector3
+    {
+      x       -3.2
+      y       1
+      z       2
+    }
+    m_Rotate     Vector3
+    {
+      x       0
+      y       0
+      z       0
+    }
+  }
+  PointLightComponent
+  {
+    m_active   1
+    m_name   PointLightComponent
+    m_uniquename   PointLightComponent
+
+    m_ambient   Vector3
+    {
+      x     0.2
+      y     0.2
+      z     0.2
+    }
+    m_diffuse   Vector3
+    {
+      x     5.5
+      y     5.5
+      z     5.5
+    }
+    m_specular   Vector3
+    {
+      x     100
+      y     100
+      z     100
+    }
+    m_color   1
+    m_constant   0
+    m_linear   0.09
+    m_quadratic   0.032
+  }
+}
+PointLight
+{
+  GameObject
+  {
+    m_name   light3
+    m_id     6
+    m_active     1
+    m_isArchtype     0
+    m_archtypename     PointLight
+  }
+  ModelComponent
+  {
+    m_path     C:\Users\Izak\Documents\Visual Studio 2013\Projects\OpenGLTutorial\OpenGLTutorial\Resource\Models\cube\cube.obj
+    m_texture   C:\Users\Izak\Documents\Visual Studio 2013\Projects\OpenGLTutorial\OpenGLTutorial\Resource\Textures\PointLight.png
+    m_active     1
+    m_name     ModelComponent
+    m_uniquename
+  }
+  Transform
+  {
+    m_Scale     Vector3
+    {
+      x       0.2
+      y       0.2
+      z       0.2
+    }
+    m_Pos     Vector3
+    {
+      x       0
+      y       0
+      z       -2
+    }
+    m_Rotate     Vector3
+    {
+      x       0
+      y       0
+      z       0
+    }
+  }
+  PointLightComponent
+  {
+    m_active   1
+    m_name   PointLightComponent
+    m_uniquename   PointLightComponent
+
+    m_ambient   Vector3
+    {
+      x     0.2
+      y     0.2
+      z     0.2
+    }
+    m_diffuse   Vector3
+    {
+      x     5.5
+      y     5.5
+      z     5.5
+    }
+    m_specular   Vector3
+    {
+      x     100
+      y     100
+      z     100
+    }
+    m_color   1
+    m_constant   0
+    m_linear   0.09
+    m_quadratic   0.032
+  }
+}

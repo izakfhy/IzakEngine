@@ -1,0 +1,31 @@
+Gizmo
+{
+  ModelComponent
+  {
+    m_path     C:\Users\Izak\Documents\Visual Studio 2013\Projects\OpenGLTutorial\OpenGLTutorial\Resource\Models\Gizmo\TranslateGizmo.obj
+    m_active     1
+    m_name     ModelComponent
+    m_uniquename
+  }
+  Transform
+  {
+    m_Scale     Vector3
+    {
+      x       0.05
+      y       0.05
+      z       0.05
+    }
+    m_Pos     Vector3
+    {
+      x       0
+      y       0
+      z       0
+    }
+    m_Rotate     Vector3
+    {
+      x       0
+      y       0
+      z       0
+    }
+  }
+}
